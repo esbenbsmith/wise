@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wise</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css">
+
+</head>
+	<body>
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container-fluid">
+		    	<div class="navbar-header">
+		    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		    			<span class="icon-bar"></span>
+		    			<span class="icon-bar"></span>
+		    			<span class="icon-bar"></span>
+		    		</button>
+		    		<a href="/" class="navbar-brand" > <%= image_tag "logosmall.png" %></a>
+		    	</div>
+				<div class="collapse navbar-collapse"> 
+		    	<ul class="nav navbar-nav navbar-right">
+						
+							<%= link_to "About", about_path, class: "btn navbar-btn navbar-right btn-default" %>
+
+							
+						
+		    		</ul>
+		    	</div>
+			</div>
+		</nav> 
+
+		<%= yield %>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
