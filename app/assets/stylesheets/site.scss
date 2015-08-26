@@ -1,3 +1,20 @@
-// Place all the styles related to the site controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+height: 500px;
+width: 100%;
+padding-top:0px;
+background-image: url(http://i51.photobucket.com/albums/f364/esbenbsmith/lips_zpsa9d6vxpu.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+color: white;  
+margin-top:-20px;
+text-shadow: 2px 2px 4px #000000;
+}
+body > div.jumbotron > center > h1 {
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+}
+body > div.jumbotron > center > h2 {
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+}
